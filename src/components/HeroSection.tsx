@@ -27,7 +27,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8 }}
             className="mb-8 flex justify-center"
           >
-            <div className="w-56 h-56 md:w-80 md:h-80 rounded-full border-4 border-purple-500 overflow-hidden shadow-2xl mt-16 lg:mt-0 flex-shrink-0">
+            <div className="w-56 h-56 md:w-80 md:h-80 rounded-full border-4 border-slate-600 overflow-hidden shadow-2xl mt-16 lg:mt-0 flex-shrink-0">
               <img
                 src="/profil.jpg"
                 alt="Profil Qanita"
@@ -47,7 +47,7 @@ export default function HeroSection() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
             >
-              👋 Selamat datang di portfolio saya
+              Welcome to my portfolio
             </motion.span>
           </motion.div>
 
@@ -55,21 +55,18 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tigh"
+            className="font-serif text-4xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tigh"
           >
-            Fullstack Developer
-            <br />
-            <span className="text-gradient">&amp; Content Creator</span>
+            <span className="text-gradient">Qanita</span>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto"
+            className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto"
           >
-            Saya membangun aplikasi web yang indah dan fungsional, serta
-            membagikan pengetahuan melalui konten yang inspiratif.
+            Berfokus pada pengembangan solusi web yang inovatif dengan determinasi tinggi. Saya mengombinasikan struktur kode yang solid dengan desain yang intuitif.
           </motion.p>
 
           <motion.div
