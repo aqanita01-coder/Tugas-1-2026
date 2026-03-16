@@ -18,7 +18,7 @@ export default function HeroSection() {
     >
       <ThreeScene />
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 relative z-10 max-w-7xl">
         <div className="flex flex-col lg:flex-row-reverse items-center justify-center gap-20 lg:text-left text-center">
           {/* BINGKAI FOTO KAMU */}
           <motion.div
@@ -27,7 +27,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8 }}
             className="mb-8 flex justify-center"
           >
-            <div className="w-40 h-40 md:w-56 md:h-56 rounded-full border-4 border-purple-500 overflow-hidden shadow-xl">
+            <div className="w-56 h-56 md:w-80 md:h-80 rounded-full border-4 border-purple-500 overflow-hidden shadow-2xl mt-16 lg:mt-0 flex-shrink-0">
               <img
                 src="/profil.jpg"
                 alt="Profil Qanita"
