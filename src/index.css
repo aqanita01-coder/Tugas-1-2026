@@ -37,12 +37,12 @@
     --radius: 0.75rem;
 
     /* Custom tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(0, 75%, 39%), hsl(200 80% 50%));
-    --gradient-hero: linear-gradient(180deg, hsl(0, 81%, 38%) 0%, hsl(182, 100%, 87%) 100%);
-    --navbg: linear-gradient(180deg, hsl(0, 98%, 36%) 0%, hsl(171, 91%, 91%) 100%);
-    --shadow-glow: 0 0 40px hsl(199, 98%, 63%);
-    --shadow-card: 0 4px 20px hsl(0, 100%, 50%);
-    --shadow-card-hover: 0 8px 30px hsl(0, 100%, 50%);
+    --gradient-primary: linear-gradient(135deg, hsl(345, 100%, 50%), hsl(224, 98%, 40%));
+    --gradient-hero: linear-gradient(180deg, hsl(342, 100%, 50%) 0%, hsl(246, 100%, 69%) 100%);
+    --navbg: linear-gradient(180deg, hsl(347, 100%, 50%) 0%, hsl(246, 100%, 76%) 100%);
+    --shadow-glow: 0 0 40px hsl(350, 100%, 50%);
+    --shadow-card: 0 4px 20px hsl(251, 100%, 50%);
+    --shadow-card-hover: 0 8px 30px hsl(246, 100%, 50%);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
