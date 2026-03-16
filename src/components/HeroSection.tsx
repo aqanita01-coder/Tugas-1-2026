@@ -27,7 +27,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8 }}
             className="mb-8 flex justify-center"
           >
-            <div className="w-56 h-56 md:w-80 md:h-80 rounded-full border-4 border-slate-600 overflow-hidden shadow-2xl mt-16 lg:mt-0 flex-shrink-0">
+            <div className="w-56 h-56 md:w-80 md:h-80 rounded-full border-4 border-slate-900 overflow-hidden shadow-2xl mt-16 lg:mt-0 flex-shrink-0">
               <img
                 src="/profil.jpg"
                 alt="Profil Qanita"
