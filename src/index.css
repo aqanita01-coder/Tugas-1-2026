@@ -39,7 +39,7 @@
     /* Custom tokens */
     --gradient-primary: linear-gradient(135deg, hsl(345, 100%, 39%), hsl(224, 100%, 34%));
     --gradient-hero: linear-gradient(180deg, hsl(342, 100%, 50%) 0%, hsl(246, 100%, 64%) 100%);
-    --navbg: linear-gradient(180deg, hsl(347, 100%, 50%) 0%, hsl(246, 100%, 76%) 100%);
+    --navbg: linear-gradient(180deg, hsl(342, 100%, 50%) 0%, hsl(0, 0%, 100%) 100%);
     --shadow-glow: 0 0 40px hsl(350, 100%, 50%);
     --shadow-card: 0 4px 20px hsl(251, 100%, 50%);
     --shadow-card-hover: 0 8px 30px hsl(246, 100%, 50%);
@@ -86,7 +86,7 @@
     /* Custom tokens dark */
     --gradient-primary: linear-gradient(135deg, hsl(342, 100%, 50%), hsl(241, 100%, 50%));
     --gradient-hero: linear-gradient(180deg, hsla(337, 100%, 50%, 0.87) 0%, hsla(220, 100%, 50%, 0.274) 100%);
-    --navbg: linear-gradient(180deg, hsl(0, 62%, 38%) 0%, hsla(244, 100%, 50%, 0.342) 100%);
+    --navbg: linear-gradient(180deg, hsl(0, 0%, 0%) 0%, hsl(0, 0%, 0%) 100%);
     --shadow-glow: 0 0 60px hsla(347, 100%, 50%, 0.4);
     --shadow-card: 0 4px 20px hsla(256, 100%, 50%, 0.3);
     --shadow-card-hover: 0 8px 30px hsla(256, 100%, 50%, 0.15);
