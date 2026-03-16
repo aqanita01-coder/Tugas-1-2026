@@ -35,7 +35,7 @@ export default function HeroSection() {
               />
             </div>
           </motion.div>
-          <div className="flex flex-col items-center lg:items-start max-w-2xl">
+          <div className="flex flex-col items-center lg:items-start max-w-3xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -55,7 +55,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="font-display text-4xl md:text-6xl lg:text-7xl font-bold mb-6"
+            className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tigh"
           >
             Fullstack Developer
             <br />
