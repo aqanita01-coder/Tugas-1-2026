@@ -1,28 +1,47 @@
-import { motion } from 'framer-motion';
-import { ArrowDown, Github, Linkedin, Youtube, Instagram } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import ThreeScene from './ThreeScene';
+import { motion } from "framer-motion";
+import { ArrowDown, Github, Linkedin, Youtube, Instagram } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import ThreeScene from "./ThreeScene";
 
 export default function HeroSection() {
   const scrollToAbout = () => {
-    const element = document.querySelector('#about');
+    const element = document.querySelector("#about");
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero"
+    >
       <ThreeScene />
-      
+
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="flex flex-col lg:flex-row-reverse items-center justify-center gap-20 lg:text-left text-center">
+          {/* BINGKAI FOTO KAMU */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+            className="mb-8 flex justify-center"
+          >
+            <div className="w-40 h-40 md:w-56 md:h-56 rounded-full border-4 border-purple-500 overflow-hidden shadow-xl">
+              <img
+                src="/profil.jpg"
+                alt="Profil Qanita"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </motion.div>
+          <div className="flex flex-col items-center lg:items-start max-w-2xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <motion.span 
+            <motion.span
               className="inline-block px-4 py-2 rounded-full glass text-sm font-medium text-primary mb-6"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -49,8 +68,8 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto"
           >
-            Saya membangun aplikasi web yang indah dan fungsional, 
-            serta membagikan pengetahuan melalui konten yang inspiratif.
+            Saya membangun aplikasi web yang indah dan fungsional, serta
+            membagikan pengetahuan melalui konten yang inspiratif.
           </motion.p>
 
           <motion.div
@@ -59,23 +78,23 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.7 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12"
           >
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="rounded-full px-8 shadow-glow"
               onClick={() => {
-                const element = document.querySelector('#projects');
-                if (element) element.scrollIntoView({ behavior: 'smooth' });
+                const element = document.querySelector("#projects");
+                if (element) element.scrollIntoView({ behavior: "smooth" });
               }}
             >
               Lihat Projects
             </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
+            <Button
+              variant="outline"
+              size="lg"
               className="rounded-full px-8"
               onClick={() => {
-                const element = document.querySelector('#contact');
-                if (element) element.scrollIntoView({ behavior: 'smooth' });
+                const element = document.querySelector("#contact");
+                if (element) element.scrollIntoView({ behavior: "smooth" });
               }}
             >
               Hubungi Saya
@@ -89,10 +108,10 @@ export default function HeroSection() {
             className="flex items-center justify-center gap-6"
           >
             {[
-              { icon: Github, href: '#', label: 'GitHub' },
-              { icon: Linkedin, href: '#', label: 'LinkedIn' },
-              { icon: Youtube, href: '#', label: 'YouTube' },
-              { icon: Instagram, href: '#', label: 'Instagram' },
+              { icon: Github, href: "#", label: "GitHub" },
+              { icon: Linkedin, href: "#", label: "LinkedIn" },
+              { icon: Youtube, href: "#", label: "YouTube" },
+              { icon: Instagram, href: "#", label: "Instagram" },
             ].map((social) => (
               <motion.a
                 key={social.label}
@@ -107,6 +126,7 @@ export default function HeroSection() {
             ))}
           </motion.div>
         </div>
+      </div>
       </div>
 
       <motion.button
