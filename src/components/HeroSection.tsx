@@ -55,7 +55,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="font-serif text-4xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tigh"
+            className="font-display text-4xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tigh"
           >
             <span className="text-gradient">Qanita</span>
           </motion.h1>
@@ -64,7 +64,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto"
+            className="text-lg md:text-xl font-mono text-slate-950 mb-8 max-w-2xl mx-auto"
           >
             Berfokus pada pengembangan solusi web yang inovatif dengan determinasi tinggi. Saya mengombinasikan struktur kode yang solid dengan desain yang intuitif.
           </motion.p>
