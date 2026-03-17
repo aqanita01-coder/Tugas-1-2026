@@ -8,7 +8,7 @@ export default function Footer() {
     { icon: Github, href: 'https://github.com/aqanita01-coder', label: 'GitHub' },
     // { icon: Linkedin, href: '#', label: 'LinkedIn' },
     // { icon: Youtube, href: '#', label: 'YouTube' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
+    // { icon: Instagram, href: '#', label: 'Instagram' },
   ];
 
   return (

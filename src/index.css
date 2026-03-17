@@ -6,8 +6,8 @@
 
 @layer base {
   :root {
-    --background: 210 20% 98%;
-    --foreground: 240 20% 10%;
+    --background: 240 50% 85%;
+    --foreground: 175 20% 10%;
 
     --card: 0 0% 100%;
     --card-foreground: 330 20% 10%;
@@ -21,7 +21,7 @@
     --secondary: 220 75% 92%;
     --secondary-foreground: 220 20% 20%;
 
-    --muted: 340 90% 70%;
+    --muted: 240 90% 70%;
     --muted-foreground: 220 10% 45%;
 
     --accent: 175 80% 40%;
@@ -38,11 +38,11 @@
 
     /* Custom tokens */
     --gradient-primary: linear-gradient(135deg, hsl(345, 100%, 39%), hsl(224, 100%, 34%));
-    --gradient-hero: linear-gradient(180deg, hsl(342, 100%, 50%) 0%, hsl(246, 100%, 64%) 100%);
-    --navbg: linear-gradient(180deg, hsl(342, 100%, 50%) 0%, hsl(0, 0%, 100%) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(342, 100%, 50%) 0%, hsl(246, 100%, 69%) 100%);
+    --navbg: linear-gradient(180deg, hsl(342, 100%, 64%) 0%, hsl(0, 0%, 100%) 100%);
     --shadow-glow: 0 0 40px hsl(335, 100%, 50%);
-    --shadow-card: 0 4px 20px hsl(350, 100%, 50%);
-    --shadow-card-hover: 0 8px 30px hsl(246, 100%, 50%);
+    --shadow-card: 0 4px 20px hsl(221, 100%, 64%);
+    --shadow-card-hover: 0 8px 30px hsl(347, 93%, 62%);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -55,10 +55,10 @@
   }
 
   .dark {
-    --background: 240 25% 15%;
+    --background: 235 25% 10%;
     --foreground: 210 20% 98%;
 
-    --card: 220 25% 10%;
+    --card: 220 25% 15%;
     --card-foreground: 210 20% 98%;
 
     --popover: 220 25% 10%;
@@ -67,10 +67,10 @@
     --primary: 330 70% 45%;
     --primary-foreground: 220 25% 6%;
 
-    --secondary: 220 20% 18%;
+    --secondary: 250 20% 35%;
     --secondary-foreground: 210 20% 90%;
 
-    --muted: 240 60% 55%;
+    --muted: 235 60% 15%;
     --muted-foreground: 220 15% 60%;
 
     --accent: 220 80% 50%;
@@ -86,10 +86,10 @@
     /* Custom tokens dark */
     --gradient-primary: linear-gradient(135deg, hsl(342, 100%, 50%), hsl(241, 100%, 50%));
     --gradient-hero: linear-gradient(180deg, hsla(337, 100%, 50%, 0.87) 0%, hsla(220, 100%, 50%, 0.274) 100%);
-    --navbg: linear-gradient(180deg, hsla(0, 0%, 0%, 0.616) 0%, hsl(0, 0%, 0%) 100%);
+    --navbg: linear-gradient(180deg, hsla(342, 100%, 20%, 0.87) 0%, hsl(0, 0%, 0%) 100%);
     --shadow-glow: 0 0 60px hsl(332, 100%, 50%);
-    --shadow-card: 0 4px 20px hsl(246, 100%, 27%);
-    --shadow-card-hover: 0 8px 30px hsla(340, 100%, 24%, 0.849);
+    --shadow-card: 0 4px 20px hsla(239, 69%, 30%, 0.651);
+    --shadow-card-hover: 0 8px 30px hsla(342, 100%, 26%, 0.945);
 
     --sidebar-background: 220 25% 8%;
     --sidebar-foreground: 210 20% 90%;
