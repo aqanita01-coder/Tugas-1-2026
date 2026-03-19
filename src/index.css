@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 240 50% 80%;
+    --foreground: 175 20% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 330 20% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 330 20% 10%;
+
+    --primary: 240 60% 70%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 75% 92%;
+    --secondary-foreground: 220 20% 20%;
+
+    --muted: 240 70% 70%;
+    --muted-foreground: 220 10% 45%;
+
+    --accent: 175 80% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 175 80% 40%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(0, 0%, 0%), hsl(236, 70%, 35%));
+    --gradient-hero: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(241, 100%, 66%) 100%);
+    --navbg: linear-gradient(180deg, hsl(241, 73%, 88%) 0%, hsl(241, 100%, 72%) 100%);
+    --shadow-glow: 0 0 40px hsl(241, 100%, 50%);
+    --shadow-card: 0 4px 20px hsl(266, 79%, 47%);
+    --shadow-card-hover: 0 8px 30px hsl(246, 100%, 50%);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 175 80% 40%;
+  }
+
+  .dark {
+    --background: 240 25% 20%;
+    --foreground: 210 20% 98%;
+
+    --card: 240 25% 10%;
+    --card-foreground: 210 20% 98%;
+
+    --popover: 220 25% 10%;
+    --popover-foreground: 210 20% 98%;
+
+    --primary: 240 60% 80%;
+    --primary-foreground: 220 25% 6%;
+
+    --secondary: 250 20% 35%;
+    --secondary-foreground: 210 20% 90%;
+
+    --muted: 240 70% 15%;
+    --muted-foreground: 220 15% 60%;
+
+    --accent: 210 80% 50%;
+    --accent-foreground: 220 25% 6%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 20% 18%;
+    --input: 220 20% 18%;
+    --ring: 175 80% 50%;
+
+    /* Custom tokens dark */
+    --gradient-primary: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(236, 72%, 55%));
+    --gradient-hero: linear-gradient(180deg, hsla(0, 0%, 0%, 0.445) 0%, hsl(240, 66%, 66%) 100%);
+    --navbg: linear-gradient(180deg, hsla(242, 37%, 42%, 0.658) 0%, hsl(0, 0%, 0%) 100%);
+    --shadow-glow: 0 0 60px hsl(249, 100%, 71%);
+    --shadow-card: 0 4px 20px hsla(244, 23%, 54%, 0.664);
+    --shadow-card-hover: 0 8px 30px hsl(241, 63%, 48%);
+
+    --sidebar-background: 220 25% 8%;
+    --sidebar-foreground: 210 20% 90%;
+    --sidebar-primary: 175 80% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 20% 15%;
+    --sidebar-accent-foreground: 210 20% 90%;
+    --sidebar-border: 220 20% 18%;
+    --sidebar-ring: 175 80% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+}
+
+@layer components {
+    .bg-navbg {
+    background: var(--navbg);
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-primary);
+  }
+
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-card-hover {
+    box-shadow: var(--shadow-card-hover);
+  }
+
+  .glass {
+    @apply bg-card/80 backdrop-blur-lg border border-border/50;
+  }
+
+  .glass-strong {
+    @apply bg-card/95 backdrop-blur-xl border border-border;
+  }
+}
+
+@layer utilities {
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .animate-spin-slow {
+    animation: spin 20s linear infinite;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.7;
+    }
+  }
+}
