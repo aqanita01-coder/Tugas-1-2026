@@ -27,7 +27,7 @@ const App = () => {
       <TooltipProvider>
         {isLoading ? (
           // Tampilan Loading Screen
-          <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-gray-500">
+          <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-gray-900">
             <div style={{ width: '300px', height: '300px' }}>
               <DotLottiePlayer
                 src="https://lottie.host/ca385c87-61ae-4bc8-a3f5-1867ffa945ac/PlRrnk4feG.lottie"
