@@ -67,7 +67,7 @@ export default function AboutSection() {
             transition={{ duration: 0.6 }}
             className="space-y-6"
           >
-            <h3 className="text-slate-300 font-display text-2xl md:text-3xl font-bold">
+            <h3 className="text-slate-600 font-display text-2xl md:text-3xl font-bold">
               Qanita
             </h3>
 
@@ -75,7 +75,7 @@ export default function AboutSection() {
             <Accordion type="single" collapsible className="w-full space-y-4">
               <AccordionItem value="description" className="border-none">
                 <AccordionTrigger className="hover:no-underline p-4 glass rounded-xl">
-                  <span className="text-slate-700 font-serif">Siapa Saya?</span>
+                  <span className="text-wh font-serif">Siapa Saya?</span>
                 </AccordionTrigger>
                 <AccordionContent className="p-4 text-slate-50 leading-relaxed">
                   Halo, saya Qanita. Saya adalah seorang pelajar yang aktif mengeksplorasi minat di bidang seni melalui hobi menggambar, menonton, dan mendengarkan musik.
