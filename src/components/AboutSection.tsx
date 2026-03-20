@@ -36,7 +36,7 @@ export default function AboutSection() {
 
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
+            initial={{ opacity: 0, x: -150 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
@@ -72,7 +72,7 @@ export default function AboutSection() {
             </h3>
 
             {/* Accordion untuk Deskripsi dan Stats */}
-            <Accordion type="single" collapsible className="w-full space-y-4">
+            <Accordion type="single" collapsible defaultValue="description" className="w-full space-y-4">
               <AccordionItem value="description" className="border-none">
                 <AccordionTrigger className="hover:no-underline p-4 glass rounded-xl">
                   <span className="text-wh font-serif">Siapa Saya?</span>
