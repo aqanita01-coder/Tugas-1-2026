@@ -50,8 +50,8 @@ function SkillBar({ name, level, delay }: { name: string; level: number; delay: 
 
 export default function SkillsSection() {
   return (
-    <section id="skills" className="py-20 md:py-32">
-      <div className="container mx-auto px-4">
+    <section id="skills" className="py-20 md:py-32 relative overflow-hidden">
+      <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -67,7 +67,7 @@ export default function SkillsSection() {
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {/* English - B1 Standard */}
+          {/* English */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -79,7 +79,7 @@ export default function SkillsSection() {
               <div className="p-3 rounded-xl bg-primary/10">
                 <span className="text-2xl">🌍</span>
               </div>
-              <h3 className="font-display text-xl font-bold">English (B1)</h3>
+              <h3 className="font-display text-xl font-bold">English</h3>
             </div>
             <div className="space-y-4">
               {skills.english.map((skill, index) => (
@@ -131,6 +131,24 @@ export default function SkillsSection() {
           </motion.div>
         </div>
       </div>
+
+      {/* --- PENAMBAHAN KRIS (DENGAN PERBAIKAN Z-INDEX) --- */}
+      <motion.div 
+        /* z-20 ditambahkan agar berada di atas kontainer skill yang z-10 */
+        className="absolute bottom-0 right-0 md:right-10 pointer-events-none opacity-100 z-20"
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, delay: 0.5 }}
+      >
+        <motion.img 
+          src="/asset.png" 
+          alt="Kris" 
+          className="w-32 md:w-48 h-auto"
+          animate={{ y: [0, -10, 0] }}
+          transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+        />
+      </motion.div>
     </section>
   );
 }
